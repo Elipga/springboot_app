@@ -4,9 +4,11 @@ import com.springboot_app.Domain.Account;
 import com.springboot_app.Domain.Bank;
 import com.springboot_app.Repository.AccountRepository;
 import com.springboot_app.Repository.BankRepository;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+@Service
 public class AccountServiceImpl implements AccountService{
     private AccountRepository accountRepository;
     private BankRepository bankRepository;
